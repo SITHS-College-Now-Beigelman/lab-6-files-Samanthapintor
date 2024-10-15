@@ -24,7 +24,7 @@ int main ()
 
     //math 
     inFile >> numberOne >> numberTwo >> character >>  sentence; //input the two integers, character and sentence
-    outFile << numberOne + numberTwo << endl << character << endl << sentence; //output the sum of the two integers, the value of the next character, and the sentence
+    outFile << numberOne + numberTwo << endl << character + 1 << endl << sentence; //output the sum of the two integers, the value of the next character, and the sentence
     
     //close the files
     inFile.close();
@@ -32,3 +32,27 @@ int main ()
 
     return 0; 
 }
+
+/*
+Part 1 - my input: 
+    Input: 
+    33 33
+    H
+    Hello!
+
+    Output: 
+    66
+    73
+    Hello!
+
+Part 2 - given input: 
+    Input: 
+    23 57
+    R
+    Howdy!
+
+    Output: 
+    80
+    83
+    Howdy!
+*/
